@@ -5,3 +5,4 @@ We are building a portfolio with ReactJS and AWS.
 ## Technologies Used
 Git & Github
 SSH
+Brew
