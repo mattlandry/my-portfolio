@@ -25,8 +25,7 @@
         Error message goes here
       </div>
     </main>
-    <script src="https://unpkg.com/babel-standalone">
-    </script>
+    <script src="https://unpkg.com/babel-standalone"></script>
     <script type="text/babel" data-presets="latest">
 
     const getMessage = (name) => `Welcome to Javascript, ${name}!`;
@@ -34,9 +33,11 @@
 
     const contentArea = document.getElementById('content');
     const messageArea = document.getElementById("error");
+
     button.addEventListener('click', (evt) => {
       messageArea.className = "errorBox--hidden";
       contentArea.textContent = "";
+
       let name = document.getElementById("name").value;
 
       if (name.length < 2) {
