@@ -6,3 +6,7 @@ We are building a portfolio with ReactJS and AWS.
 Git & Github
 SSH
 Brew
+html
+css
+fontawesome
+Google fonts
