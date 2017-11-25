@@ -48,6 +48,9 @@ typings/
 # Optional REPL history
 .node_repl_history
 
+# Ignore Dist bundle.js folder
+dist
+
 # Output of 'npm pack'
 *.tgz
 
@@ -56,4 +59,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
