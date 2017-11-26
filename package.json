@@ -1,10 +1,11 @@
-{
+  {
   "name": "myportfolio",
   "version": "1.0.0",
   "description": "My Portfolio",
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test-watch": "jest --watch",
     "webpack": "webpack",
     "webpack-watch": "webpack --watch"
   },
@@ -28,7 +29,6 @@
     "babel-jest": "^21.2.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-jest": "^21.2.0",
     "babel-preset-react": "^6.24.1",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
