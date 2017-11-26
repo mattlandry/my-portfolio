@@ -39,16 +39,3 @@ describe("ExampleWork component", () => {
   });
 
 });
-
-describe("ExampleWorkBubble component", () => {
-  let component = shallow(<ExampleWorkBubble example={myWork[1]}/>);
-  let images = component.find("img");
-
-  it("Should contain a single 'img' element", () => {
-    expect(images.length).toEqual(1);
-  });
-
-  it("Should have the image src set correctly", () => {
-    expect(images.getElement().props.src).toEqual(myWork[1].image.src);
-  })
-});
