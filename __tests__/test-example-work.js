@@ -1,8 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import ExampleWork from './example-work';
-
-
+import { shallow } from 'enzyme';
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import ExampleWork from '../js/example-work';
+configure ({ adapter: new Adapter()});
 
 const myWork = [
   {
@@ -21,16 +22,15 @@ const myWork = [
       'comment': `Bengal cat” by roberto shabs is licensed under CC BY 2.0
                   https://www.flickr.com/photos/37287295@N00/2540855181`
     }
-  },
-  {
-    'title': "Work Example 2",
-    'image': {
-      'desc': "example screenshot of a project involving chemistry",
-      'src': "images/example2.png",
-      'comment': `Chemistry” by Surian Soosay is licensed under CC BY 2.0
-                  https://www.flickr.com/photos/ssoosay/4097410999`
-    }
   }
-]
+];
 
-ReactDOM.render(<ExampleWork work={myWork}/>, document.getElementById('example-work'));
+
+
+describe("ExampleWork component", () => {
+  let component = shallow(<ExampleWork work={myWork}/>);
+
+    it("Should be a 'section' element", () => {
+      console.log(component.debug());
+  });
+});
